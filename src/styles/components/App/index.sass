@@ -1,5 +1,104 @@
 @use '../../variables'
 @use '../../mixins'
 
-.container 
+.container
+    display: flex
+    width: 70rem
+    height: 35rem
     
+    padding-left: .3rem
+
+    .title
+        width: 50%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        color: white
+
+        h1
+            font-size: 3.05rem
+            line-height: 3.5rem
+        p
+            padding-top: 2rem
+
+    .form-container
+        width: 50%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-left: 1.6rem
+
+        .trial-box
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            background-color: variables.$trial-card-color
+            width: 33.8rem
+            height: 3.8rem
+            border-radius: 13px
+            box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)
+            font-size: .97rem
+            p
+                &:first-child
+                    font-weight: 600
+                    margin-right: .2rem
+
+        .form
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            border-radius: 10px
+            background-color: white
+            width: 33.8rem
+            height: 29.8rem
+            padding: 1.3rem 0rem
+            box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)
+
+            input
+                @include mixins.input-box
+                padding-left: 1.9rem
+                color: variables.$placeholder-color                
+                font-weight: 700
+                font-size: .88rem
+
+                &:focus     
+                    outline: none               
+                    border: 2px solid hsla(249, 10%, 26%, .4)
+
+            input.error 
+                border-color: variables.$bg-color
+            span.error-message  
+                display: none              
+                color: variables.$bg-color
+                font-style: italic                
+                width: 28.7rem
+                text-align: right
+            img.error-icon
+                display: none
+
+            button
+                @include mixins.input-box
+                background-color: variables.$button-color
+                color: white
+                text-transform: uppercase
+                font-size: 1.06rem
+                border-color: transparent
+                box-shadow: 0 .15rem 4px rgba(0, 0, 0, 0.6)
+                &:hover
+                    cursor: pointer
+
+            span
+                display: flex
+                font-size: .7rem
+                color: variables.$disclaimer-color
+                
+                p
+                    &:last-child
+                        color: variables.$bg-color
+                        font-weight: 700
+                        margin-left: .2rem
