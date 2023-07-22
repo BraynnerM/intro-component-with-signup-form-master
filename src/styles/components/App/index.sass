@@ -57,14 +57,14 @@
             width: 33.8rem
             height: 29.8rem
             padding: 1.3rem 0rem
-            box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)
-
+            box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)            
+            
             input
                 @include mixins.input-box
                 padding-left: 1.9rem
                 color: variables.$placeholder-color                
                 font-weight: 700
-                font-size: .88rem
+                font-size: .88rem                
 
                 &:focus     
                     outline: none               
@@ -78,8 +78,13 @@
                 font-style: italic                
                 width: 28.7rem
                 text-align: right
+                position: relative
             img.error-icon
                 display: none
+                position: relative
+                left: 192px
+                top: 38px
+                
 
             button
                 @include mixins.input-box

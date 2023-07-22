@@ -40,17 +40,17 @@ function App() {
           <p>then $20/mo. thereafter</p>
         </span>
         <form className="form" onSubmit={handleSubmit}>
-          <input type="text" placeholder='Name' />
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
+          <input type="text" placeholder='Name' />          
           <span className="error-message">First Name cannot be empty</span>
-          <input type="text" placeholder='Last Name' />
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
+          <input type="text" placeholder='Last Name' />          
           <span className="error-message">Last Name cannot be empty</span>
-          <input type="text" placeholder='Email Address' />
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
+          <input type="text" placeholder='Email Address' />          
           <span className="error-message">Looks like this is not an email</span>
-          <input type="text" placeholder='Password' />
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
+          <input type="text" placeholder='Password' />          
           <span className="error-message">Password cannot be empty</span>
           <button type='submit'>claim your free trial</button>
           <span>
