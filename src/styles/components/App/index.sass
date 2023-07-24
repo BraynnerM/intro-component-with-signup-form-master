@@ -25,10 +25,8 @@
 
     .form-container
         width: 50%
-        height: 100%
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+        min-height: 100%
+        display: block        
         margin-left: 1.6rem
 
         .trial-box
@@ -42,29 +40,29 @@
             border-radius: 13px
             box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)
             font-size: .97rem
+            margin-bottom: 1.5rem
             p
                 &:first-child
                     font-weight: 600
                     margin-right: .2rem
 
         .form
-            display: flex
-            flex-direction: column
-            justify-content: space-evenly
-            align-items: center
+            display: block            
             border-radius: 10px
             background-color: white
             width: 33.8rem
-            height: 29.8rem
-            padding: 1.3rem 0rem
-            box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)            
+            min-height: 29.8rem                       
+            box-shadow: 0 .5rem 1px rgba(0, 0, 0, 0.15)
+            padding-top: 2.6rem
+            padding-left: 2.5rem                     
             
             input
                 @include mixins.input-box
                 padding-left: 1.9rem
                 color: variables.$placeholder-color                
                 font-weight: 700
-                font-size: .88rem                
+                font-size: .88rem
+                margin-bottom: 1.25rem               
 
                 &:focus     
                     outline: none               
@@ -75,15 +73,20 @@
             span.error-message  
                 display: none              
                 color: variables.$bg-color
-                font-style: italic                
-                width: 28.7rem
-                text-align: right
+                font-style: italic
+                margin-left: auto
+                width: 200px
                 position: relative
+                bottom: 12px
+                margin-bottom: .4rem
+                         
+                
+                           
             img.error-icon
                 display: none
-                position: relative
-                left: 192px
-                top: 38px
+                position: absolute
+                right: 170px
+                padding-top: 1rem
                 
 
             button
@@ -92,6 +95,7 @@
                 color: white
                 text-transform: uppercase
                 font-size: 1.06rem
+                margin-bottom: .9rem
                 border-color: transparent
                 box-shadow: 0 .15rem 4px rgba(0, 0, 0, 0.6)
                 &:hover
@@ -99,11 +103,16 @@
 
             span
                 display: flex
-                font-size: .7rem
+                font-size: .685rem
                 color: variables.$disclaimer-color
+                margin-left: 2.9rem
                 
+                                                
                 p
+                    margin-bottom: 2.6rem
+                    
                     &:last-child
                         color: variables.$bg-color
                         font-weight: 700
                         margin-left: .2rem
+                        
