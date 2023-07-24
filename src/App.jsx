@@ -22,21 +22,18 @@ function App() {
       if (input.value.trim() === '') {
         input.classList.add('error');
         input.nextElementSibling.style.display = 'block';
-        input.previousElementSibling.style.display = 'inline';
-      }
-
-      if (input === emailInput) {
-        return;
-      }
+        input.previousElementSibling.style.display = 'block';
+      }      
     });
 
     const emailValue = emailInput.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    console.log(emailValue)
+    const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
 
     if (emailValue !== '' && !emailRegex.test(emailValue)) {
       emailInput.classList.add('error');
       emailInput.nextElementSibling.style.display = 'block';
-      emailInput.previousElementSibling.style.display = 'inline';
+      emailInput.previousElementSibling.style.display = 'block';
     }
   }
 
@@ -62,7 +59,7 @@ function App() {
           <input type="text" placeholder='Last Name' />          
           <span className="error-message">Last Name cannot be empty</span>
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
-          <input id="#email" type="text" placeholder='Email Address' />          
+          <input id="email" type="text" placeholder='Email Address' />          
           <span className="error-message">Looks like this is not an email</span>
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
           <input type="text" placeholder='Password' />          
