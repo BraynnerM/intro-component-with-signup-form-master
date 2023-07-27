@@ -48,12 +48,11 @@ function App() {
       </section>
       <section className="form-container">
         <span className='trial-box'>
-          <p>Try it free 7 days</p>
-          <p>then $20/mo. thereafter</p>
+          <p> <strong>Try it free 7 days </strong> then $20/mo. thereafter</p>
         </span>
         <form className="form" onSubmit={handleSubmit}>
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
-          <input type="text" placeholder='Name' />          
+          <input type="text" placeholder='First Name' />          
           <span className="error-message">First Name cannot be empty</span>
           <img className="error-icon" src="/public/src/assets/icon-error.svg" alt="Error Icon" />
           <input type="text" placeholder='Last Name' />          
@@ -66,8 +65,7 @@ function App() {
           <span className="error-message">Password cannot be empty</span>
           <button type='submit'>claim your free trial</button>          
           <span className='terms-and-services-advice'>
-            <p>By clicking the button, you are agreeing to our</p>
-            <p>Terms and Services</p>
+            <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>            
           </span>
         </form>
         
