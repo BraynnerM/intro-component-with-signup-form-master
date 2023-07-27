@@ -1,6 +1,6 @@
-# Frontend Mentor - ######NOME DO PROJETO AQUI
+# Frontend Mentor - Intro component with signup form master
 
-Esta é uma solução para o desafio do Frontend Mentor [#####NOME DO PROJETO AQUI challenge on Frontend Mentor](#######LINK DO CHALLENGE HUB). Os desafios do Frontend Mentor ajudam a melhorar minhas habilidades de codificação criando projetos realistas.
+Esta é uma solução para o desafio do Frontend Mentor [Intro component with signup form master challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1/hub). Os desafios do Frontend Mentor ajudam a melhorar minhas habilidades de codificação criando projetos realistas.
 
 ## Índice
 
@@ -21,16 +21,16 @@ Esta é uma solução para o desafio do Frontend Mentor [#####NOME DO PROJETO AQ
 Os usuários devem ser capazes de:
 
 - Visualizar o layout ideal dependendo do tamanho da tela do dispositivo
-- Ver hover states nos elementos interativos
+- Ver active states nos elementos interativos
 
 ### Captura de tela
 
-![](./public/src/assets/captura-de-tela.gif)
+![](./public/src/assets/screenshot.gif)
 
 ### Links
 
-- URL da solução: [Github](REPOSITÓRIO DO PROJETO AQUI)
--  URL do site no Github Pages: [NOME DO PROJETO AQUI](SITE DO PROJETO AQUI)
+- URL da solução: [Github](https://github.com/BraynnerM/intro-component-with-signup-form-master)
+-  URL do site no Github Pages: [Intro Component with Signup form Master](https://intro-component-with-signup-form-master-teal.vercel.app/)
 
 ## Meu processo
 
