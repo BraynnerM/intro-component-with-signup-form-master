@@ -51,16 +51,16 @@ function App() {
           <p> <strong>Try it free 7 days </strong> then $20/mo. thereafter</p>
         </span>
         <form className="form" onSubmit={handleSubmit}>
-          <img className="error-icon" src="./public/src/assets/icon-error.svg" alt="Error Icon" />
+          <img className="error-icon" src="/src/assets/icon-error.svg" alt="Error Icon" />
           <input type="text" placeholder='First Name' />          
           <span className="error-message">First Name cannot be empty</span>
-          <img className="error-icon" src="./public/src/assets/icon-error.svg" alt="Error Icon" />
+          <img className="error-icon" src="/src/assets/icon-error.svg" alt="Error Icon" />
           <input type="text" placeholder='Last Name' />          
           <span className="error-message">Last Name cannot be empty</span>
-          <img className="error-icon" src="./public/src/assets/icon-error.svg" alt="Error Icon" />
+          <img className="error-icon" src="/src/assets/icon-error.svg" alt="Error Icon" />
           <input id="email" type="text" placeholder='Email Address' />          
           <span className="error-message">Looks like this is not an email</span>
-          <img className="error-icon" src="./public/src/assets/icon-error.svg" alt="Error Icon" />
+          <img className="error-icon" src="/src/assets/icon-error.svg" alt="Error Icon" />
           <input type="text" placeholder='Password' />          
           <span className="error-message">Password cannot be empty</span>
           <button type='submit'>claim your free trial</button>          
